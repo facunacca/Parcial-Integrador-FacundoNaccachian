@@ -1,0 +1,299 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body.modo_claro {
+  background-color: #faebd7;
+  color: #222222;
+}
+
+body.modo_oscuro {
+  background-color: #222222;
+  color: #f0f0f0;
+}
+
+body.modo_claro .tarjeta_datos,
+body.modo_claro .tarjeta_formulario {
+  background-color: #e3e3e3;
+}
+
+body.modo_oscuro .tarjeta_datos,
+body.modo_oscuro .tarjeta_formulario {
+  background-color: #3a3a3a;
+}
+
+body.modo_claro .fila_dato .valor_dato {
+  background-color: #aee56b;
+  color: #222222;
+}
+
+body.modo_oscuro .fila_dato .valor_dato {
+  background-color: #aee56b;
+  color: #111111;
+}
+
+.encabezado {
+  background-color: #adafb1;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #000;
+}
+
+.barra_superior {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.titulo_sitio {
+  font-weight: bold;
+  color: #000;
+}
+
+.menu_superior {
+  display: flex;
+  gap: 10px;
+}
+
+.link_menu {
+  text-decoration: none;
+  font-size: 0.95rem;
+  color: #000;
+  font-weight: bold;
+}
+
+.link_activo {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.boton_modo {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ffffff;
+  background-color: #ffffff;
+  cursor: pointer;
+  padding-top: 4px;
+  padding-bottom: 8px;
+}
+
+.contenido {
+  max-width: 1100px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 16px;
+}
+
+.nombre_alumno {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* TARJETA DATOS (HOME) */
+.tarjeta_datos {
+  border-radius: 28px;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.columna_datos {
+  flex: 1;
+}
+
+.fila_dato {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.etiqueta_dato {
+  width: 90px;
+}
+
+.valor_dato {
+  flex: 1;
+  padding: 4px 6px;
+}
+
+.columna_foto {
+  flex: 0 0 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foto_alumno {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.fila_botones {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.boton_enlace {
+  display: inline-block;
+  padding: 14px 40px;
+  border-radius: 10px;
+  background-color: #5a5aff;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.tarjeta_formulario {
+  border-radius: 28px;
+  padding: 24px 20px;
+}
+
+#form_contacto {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.grupo_campo {
+  margin-bottom: 10px;
+}
+
+.grupo_campo label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.entrada_texto {
+  width: 100%;
+  padding: 6px 8px;
+  border-radius: 2px;
+  border: 1px solid #bbbbbb;
+  font: inherit;
+}
+
+.area_comentario {
+  min-height: 80px;
+}
+
+.grupo_botones {
+  margin-top: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.boton_enviar,
+.boton_borrar {
+  padding: 8px 26px;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.boton_enviar {
+  background-color: #16a31f;
+}
+
+.boton_borrar {
+  background-color: #159bb7;
+}
+
+/* ERRORES */
+.texto_error {
+  margin: 2px 0 0;
+  font-size: 0.8rem;
+  color: #c70000;
+}
+
+.campo_error {
+  border-color: #c70000;
+  background-color: #ffe5e5;
+}
+
+/* FOOTER */
+.pie_pagina {
+  background-color: #bbb;
+}
+
+body.modo_oscuro .pie_pagina {
+    background-color: #111111;
+}
+
+.pie_contenedor {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 8px 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo_uade {
+  height: 40px;
+  width: auto;
+}
+
+.texto_pie {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.boton_github img {
+  height: 32px;
+  width: 32px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+  .barra_superior {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+  }
+
+  .tarjeta_datos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .columna_datos {
+    width: 100%;
+  }
+
+  .columna_foto {
+    order: -1;
+  }
+
+  .fila_botones {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .boton_enlace {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pie_contenedor {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+}
